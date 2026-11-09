@@ -19,7 +19,7 @@
 
 ```
 .
-├──output/                              # Прочие данные
+├──data /                              # Прочие данные
 ├── Otchet_Gaming_Churn.docx            # Отчёт по проекту
 ├── README.md
 ├── game_data_level_sql.csv.zip         # Датасет
