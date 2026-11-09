@@ -19,7 +19,7 @@
 
 ```
 .
-├──output /                              # Прочие данные
+├──output/                              # Прочие данные
 ├── Otchet_Gaming_Churn.docx            # Отчёт по проекту
 ├── README.md
 ├── game_data_level_sql.csv.zip         # Датасет
@@ -52,7 +52,7 @@ pip install pandas numpy matplotlib tabulate scikit-learn lightgbm
 
 ## Запуск
 
-Положите `game_data_level_sql.csv` в папку `data/` и выполните:
+Положите `game_data_level_sql.csv` в папку `output/` и выполните:
 
 **1. Разведочный анализ**
 ```
@@ -62,9 +62,9 @@ python eda_churn.py data/game_data_level_sql.csv --out eda_output
 
 **2. Baseline и модели**
 ```
-python baseline.py data/game_data_level_sql.csv --model logreg
-python baseline.py data/game_data_level_sql.csv --model rf
-python baseline.py data/game_data_level_sql.csv --model lgbm
+python baseline.py output/game_data_level_sql.csv --model logreg
+python baseline.py output/game_data_level_sql.csv --model rf
+python baseline.py output/game_data_level_sql.csv --model lgbm
 ```
 Модели: `logreg` (логистическая регрессия, baseline), `rf` (случайный лес), `lgbm` (LightGBM). Случайный лес на всём файле работает долго.
 
